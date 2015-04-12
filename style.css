@@ -1,0 +1,64 @@
+﻿
+
+/* The first column of the table should have header cells that have italic text. */
+tbody th {
+    font-weight:normal;
+    font-style:italic;
+}
+
+/* The first non-header cell of each non-header row should have 'red' text. */
+tbody td:nth-child(2) {
+    color:red;
+}
+
+/* The third non-header cell of each non-header row should have 'blue' text. */
+tbody td:nth-child(4) {
+    color:blue;
+}
+
+/* Odd non-header/footer rows should have a light green background. */
+tbody tr:nth-child(odd) {
+    background-color:lightgreen;
+}
+
+/* Even non-header/footer rows should have a light blue background. */
+tbody tr:nth-child(even) {
+    background-color:lightblue;
+}
+
+/*When you hoer over a dt entry, its dd item should get a purple background. 
+    When you hover over the dd item, it should not turn purple.
+*/
+dt:hover + dd {
+    background-color:purple;
+}
+
+/*Create a div that is aligned to the left side of the page and takes up 3/4 of the page width,
+    has a space of 20px between it and the previous element and has a class of 'outer-content'.
+    Its background should be pink.
+    Inside that div have another div called 'inner-content'.
+        Its background should be blue.
+        It should take up 3/4 of the parent divs width and should be centered.
+*/
+
+.outer-content {
+    margin-left:0;
+    margin-top:20px;
+    width:75%;
+    background-color:pink;
+}
+
+[name=inner-content] {
+    margin:auto;
+    text-align:center;
+    background-color:blue;
+    width:75%;
+}
+
+/*Create two paragraphs of text. Have an image that is 100x125px sit in the upper left 
+    of those two paragraphs that the text wraps around.
+*/
+
+img {
+    float:left;
+}
